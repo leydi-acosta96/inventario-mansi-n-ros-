@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Gestión de Productos</h1>
+    </header>
+      
+      <main class="container">
+          <section class="form-section">
+            <h2>Agregar Producto</h2>
+          <form id="productForm">
+            <label>Nombre:
+            <input type="text" id="nombre" required />
+            </label>
+            <label>SKU:
+            <input type="text" id="sku" required />
+            </label>
+            <label>Precio:
+            <input type="number" id="precio" required />
+            </label>
+            <label>Cantidad:
+            <input type="number" id="cantidad" required />
+            </label>
+          <button type="submit">Guardar</button>
+          </form>
+        </section>
+        
+        
+        <section class="table-section">
+          <h2>Listado de Productos</h2>
+          <table id="productosTabla">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>SKU</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </section>
+      </main>
+      
+      
+      <script src="script.js"></script>
+    </body>
+</html>
