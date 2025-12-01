@@ -1,1 +1,105 @@
+/* Estilos generales del sistema Mansion Rosé */
+padding: 20px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+
+.header h1 {
+color: #4b2c39;
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+
+.nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #4b2c39;
+font-weight: bold;
+}
+
+
+.nav a:hover {
+color: #000;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+
+.card {
+background: #ffffff;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2 {
+color: #7a4660;
+margin-bottom: 15px;
+}
+
+
+/* BOTONES */
+button {
+padding: 10px 20px;
+background: #c48db3;
+border: none;
+border-radius: 8px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+button:hover {
+background: #a56e92;
+}
+
+
+/* FORMULARIOS */
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+
+input, select {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+
+
+/* LISTAS DE DATOS */
+#listaProductos, #listaMovimientos {
+margin-top: 15px;
+max-height: 200px;
+overflow-y: auto;
+border: 1px solid #eee;
+border-radius: 10px;
+padding: 10px;
+background: #fafafa;
+}
+
+
+.item {
+padding: 10px;
+border-bottom: 1px solid #eee;
+}
+
+
+.item:last-child {
+border-bottom: none;
+}
