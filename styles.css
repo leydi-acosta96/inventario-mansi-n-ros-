@@ -1,0 +1,104 @@
+/* Reset simple */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Estilos generales del sistema Mansion Rosé */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f5f2f6;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #4b2c39;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4b2c39;
+  font-weight: bold;
+}
+
+.nav a:hover { color: #000; }
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 { color: #7a4660; margin-bottom: 10px; }
+
+.controls { margin-bottom: 10px; }
+
+/* BOTONES */
+button {
+  padding: 8px 14px;
+  background: #c48db3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover { background: #a56e92; }
+
+/* FORMULARIOS */
+form { display: flex; flex-direction: column; gap: 10px; }
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* LISTAS DE DATOS */
+#listaProductos, #listaMovimientos, #dashboardContent {
+  margin-top: 10px;
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.item, .producto, .mov {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.item:last-child, .producto:last-child, .mov:last-child { border-bottom: none; }
+
+/* pequeña responsividad */
+@media (max-width: 600px) {
+  .nav a { display: block; margin: 6px 0; }
+  .main-content { width: 100%; padding: 0 10px; }
+}
